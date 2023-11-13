@@ -1,4 +1,4 @@
-.terraform/
-oidc/
-terra-*
-environments/eks/*
+.terraform
+*.tfstate.*
+.terraform.*
+*.tfstate

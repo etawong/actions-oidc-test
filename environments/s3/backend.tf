@@ -1,5 +1,5 @@
 module "s3" {
-  source = "git@github.com:Kenmakhanu/s3-backend-repo.git//s3-module?ref=v1.2.1"
+  source = "git@github.com:etawong/s3-backend.git//s3-module?ref=v1.2.0"
 }
 
 #Backend configuration
@@ -12,7 +12,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket  = "landmark-automation-kenmak"
+    bucket  = "landmark-automation-etienne"
     region  = "us-west-2"
     key     = "s3/terraform.tfstate"
     encrypt = true
